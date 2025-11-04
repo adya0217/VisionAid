@@ -1,0 +1,272 @@
+{
+  "frame_id": 5,
+  "timestamp": "20251104_122921_224864",
+  "processing_time_ms": 783.8923931121826,
+  "obstacles_detected": 22,
+  "obstacles": [
+    {
+      "direction": "FAR_RIGHT",
+      "distance": 0.99,
+      "proximity": "NEAR",
+      "confidence": 0.5,
+      "bbox": [
+        2146,
+        3229,
+        2897,
+        4096
+      ]
+    },
+    {
+      "direction": "FAR_RIGHT",
+      "distance": 2.47,
+      "proximity": "FAR",
+      "confidence": 0.45,
+      "bbox": [
+        2312,
+        3126,
+        3072,
+        3444
+      ]
+    },
+    {
+      "direction": "LEFT",
+      "distance": 5.6,
+      "proximity": "CLEAR",
+      "confidence": 0.78,
+      "bbox": [
+        731,
+        2738,
+        787,
+        2928
+      ]
+    },
+    {
+      "direction": "LEFT",
+      "distance": 7.5,
+      "proximity": "CLEAR",
+      "confidence": 0.59,
+      "bbox": [
+        1147,
+        2447,
+        1240,
+        2562
+      ]
+    },
+    {
+      "direction": "RIGHT",
+      "distance": 7.51,
+      "proximity": "CLEAR",
+      "confidence": 0.54,
+      "bbox": [
+        1821,
+        2536,
+        1913,
+        2651
+      ]
+    },
+    {
+      "direction": "LEFT",
+      "distance": 9.88,
+      "proximity": "CLEAR",
+      "confidence": 0.47,
+      "bbox": [
+        1190,
+        2473,
+        1257,
+        2561
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.46,
+      "bbox": [
+        1566,
+        2937,
+        1662,
+        2957
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.48,
+      "bbox": [
+        324,
+        2677,
+        499,
+        2742
+      ]
+    },
+    {
+      "direction": "RIGHT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        1908,
+        2610,
+        1930,
+        2656
+      ]
+    },
+    {
+      "direction": "RIGHT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.46,
+      "bbox": [
+        1843,
+        2606,
+        1868,
+        2656
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.44,
+      "bbox": [
+        472,
+        2584,
+        490,
+        2640
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        185,
+        2551,
+        305,
+        2592
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.56,
+      "bbox": [
+        421,
+        2526,
+        471,
+        2573
+      ]
+    },
+    {
+      "direction": "LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.51,
+      "bbox": [
+        889,
+        2509,
+        933,
+        2577
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        208,
+        2495,
+        306,
+        2535
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.48,
+      "bbox": [
+        344,
+        2492,
+        398,
+        2520
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.49,
+      "bbox": [
+        181,
+        2440,
+        309,
+        2472
+      ]
+    },
+    {
+      "direction": "RIGHT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        2136,
+        2349,
+        2224,
+        2378
+      ]
+    },
+    {
+      "direction": "RIGHT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.5,
+      "bbox": [
+        2227,
+        2292,
+        2298,
+        2320
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.61,
+      "bbox": [
+        1437,
+        2275,
+        1594,
+        2303
+      ]
+    },
+    {
+      "direction": "RIGHT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.46,
+      "bbox": [
+        2159,
+        2228,
+        2192,
+        2252
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.46,
+      "bbox": [
+        1505,
+        2198,
+        1565,
+        2241
+      ]
+    }
+  ]
+}

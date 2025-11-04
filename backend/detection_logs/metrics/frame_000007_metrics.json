@@ -1,0 +1,32 @@
+{
+  "frame_id": 7,
+  "timestamp": "20251104_122923_201150",
+  "processing_time_ms": 780.3971767425537,
+  "obstacles_detected": 2,
+  "obstacles": [
+    {
+      "direction": "LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        843,
+        2095,
+        980,
+        2111
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        1202,
+        2079,
+        1263,
+        2091
+      ]
+    }
+  ]
+}

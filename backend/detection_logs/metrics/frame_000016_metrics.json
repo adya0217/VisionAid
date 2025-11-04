@@ -1,0 +1,416 @@
+{
+  "frame_id": 16,
+  "timestamp": "20251104_122930_637834",
+  "processing_time_ms": 1029.630184173584,
+  "obstacles_detected": 34,
+  "obstacles": [
+    {
+      "direction": "FAR_LEFT",
+      "distance": 1.12,
+      "proximity": "MID",
+      "confidence": 0.7,
+      "bbox": [
+        0,
+        3032,
+        763,
+        3784
+      ]
+    },
+    {
+      "direction": "LEFT",
+      "distance": 2.57,
+      "proximity": "FAR",
+      "confidence": 0.54,
+      "bbox": [
+        608,
+        2674,
+        1448,
+        2978
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 3.11,
+      "proximity": "FAR",
+      "confidence": 0.46,
+      "bbox": [
+        1193,
+        3220,
+        1453,
+        3491
+      ]
+    },
+    {
+      "direction": "RIGHT",
+      "distance": 3.97,
+      "proximity": "FAR",
+      "confidence": 0.51,
+      "bbox": [
+        1818,
+        3027,
+        2017,
+        3240
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 4.02,
+      "proximity": "CLEAR",
+      "confidence": 0.9,
+      "bbox": [
+        1576,
+        2998,
+        2069,
+        3193
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 5.24,
+      "proximity": "CLEAR",
+      "confidence": 0.47,
+      "bbox": [
+        1519,
+        3244,
+        1710,
+        3401
+      ]
+    },
+    {
+      "direction": "LEFT",
+      "distance": 5.31,
+      "proximity": "CLEAR",
+      "confidence": 0.48,
+      "bbox": [
+        966,
+        3190,
+        1203,
+        3342
+      ]
+    },
+    {
+      "direction": "LEFT",
+      "distance": 6.14,
+      "proximity": "CLEAR",
+      "confidence": 0.48,
+      "bbox": [
+        996,
+        3316,
+        1148,
+        3451
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 6.58,
+      "proximity": "CLEAR",
+      "confidence": 0.47,
+      "bbox": [
+        1280,
+        2981,
+        1645,
+        3099
+      ]
+    },
+    {
+      "direction": "LEFT",
+      "distance": 7.07,
+      "proximity": "CLEAR",
+      "confidence": 0.51,
+      "bbox": [
+        812,
+        3522,
+        910,
+        3644
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 7.23,
+      "proximity": "CLEAR",
+      "confidence": 0.46,
+      "bbox": [
+        1372,
+        2092,
+        1465,
+        2212
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 8.48,
+      "proximity": "CLEAR",
+      "confidence": 0.47,
+      "bbox": [
+        1749,
+        3353,
+        1817,
+        3458
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 8.49,
+      "proximity": "CLEAR",
+      "confidence": 0.47,
+      "bbox": [
+        1798,
+        3269,
+        1855,
+        3378
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 8.64,
+      "proximity": "CLEAR",
+      "confidence": 0.47,
+      "bbox": [
+        1671,
+        3101,
+        1732,
+        3206
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 9.44,
+      "proximity": "CLEAR",
+      "confidence": 0.48,
+      "bbox": [
+        1530,
+        3041,
+        1628,
+        3129
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 9.47,
+      "proximity": "CLEAR",
+      "confidence": 0.46,
+      "bbox": [
+        1358,
+        3067,
+        1419,
+        3161
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        1434,
+        3475,
+        1475,
+        3502
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.61,
+      "bbox": [
+        1708,
+        3457,
+        1790,
+        3511
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        1436,
+        3438,
+        1505,
+        3487
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.65,
+      "bbox": [
+        1623,
+        3432,
+        1692,
+        3497
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.47,
+      "bbox": [
+        1299,
+        3431,
+        1431,
+        3492
+      ]
+    },
+    {
+      "direction": "RIGHT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.51,
+      "bbox": [
+        2061,
+        3145,
+        2135,
+        3201
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.51,
+      "bbox": [
+        1255,
+        3081,
+        1315,
+        3127
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.53,
+      "bbox": [
+        1462,
+        3046,
+        1514,
+        3102
+      ]
+    },
+    {
+      "direction": "FAR_RIGHT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.46,
+      "bbox": [
+        2402,
+        2951,
+        2517,
+        3019
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        37,
+        2947,
+        78,
+        2981
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.55,
+      "bbox": [
+        1447,
+        2751,
+        1486,
+        2833
+      ]
+    },
+    {
+      "direction": "CENTER",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        1222,
+        2742,
+        1249,
+        2848
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        493,
+        2670,
+        732,
+        2704
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.46,
+      "bbox": [
+        409,
+        2650,
+        728,
+        2683
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        485,
+        1212,
+        511,
+        1242
+      ]
+    },
+    {
+      "direction": "FAR_LEFT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.65,
+      "bbox": [
+        502,
+        1201,
+        613,
+        1239
+      ]
+    },
+    {
+      "direction": "RIGHT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        1926,
+        839,
+        1961,
+        896
+      ]
+    },
+    {
+      "direction": "RIGHT",
+      "distance": 10.0,
+      "proximity": "CLEAR",
+      "confidence": 0.45,
+      "bbox": [
+        2350,
+        812,
+        2464,
+        838
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+# Node / React Native
+node_modules/
+npm-debug.log*
+yarn-error.log
+yarn-debug.log*
+package-lock.json    # optional: you may want to keep package-lock.json; if you do, remove this line
+.expo/
+.expo-shared/
+web-build/
+dist/
+android/.gradle/
+android/app/build/
+android/.idea/
+ios/Pods/
+ios/build/
+*.keystore
+*.jks
+
+# Python
+venv/
+ENV/
+env/
+*.pyc
+__pycache__/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.python-version
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Mobile build outputs
+*.apk
+*.aab
+*.ipa
+
+# Secrets / env
+.env
+.env.local
+*.pem
+*.key
+
+# Logs
+logs/
+*.log
+
+# Git LFS pointer files (if you will use LFS)
+*.pt
+*.pth
+*.bin
+*.onnx
+*.h5
+
+# Misc
+coverage/
+coverage-html/
+test-results/
