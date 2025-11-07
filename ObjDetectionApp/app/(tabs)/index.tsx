@@ -62,9 +62,9 @@ export default function App() {
         volume: 1.0,
       });
 
-      console.log(`🔊 Spoke: ${message}`);
+      console.log(`Spoke: ${message}`);
     } catch (error) {
-      console.error('❌ Speech error:', error);
+      console.error('Speech error:', error);
     }
   };
 
@@ -94,17 +94,17 @@ export default function App() {
           await speakMessage(result.audio_message);
         }
 
-        console.log('✅ Detection:', {
+        console.log(' Detection:', {
           detected: result.detected,
           obstacles: result.total_detections,
           latency_ms: result.latency_ms,
           audio_message: result.audio_message,
         });
       } else {
-        console.error('❌ Backend error:', result);
+        console.error('Backend error:', result);
       }
     } catch (error) {
-      console.error('❌ Frame send error:', error);
+      console.error(' Frame send error:', error);
       Alert.alert('Error', 'Failed to send frame to backend');
     } finally {
       setIsProcessing(false);
@@ -114,13 +114,13 @@ export default function App() {
   useEffect(() => {
     if (permission?.granted) {
       intervalRef.current = setInterval(captureAndSendFrame, FRAME_INTERVAL) as any;
-      console.log('✅ Started frame capture loop');
+      console.log('Started frame capture loop');
     }
 
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current as any);
-        console.log('❌ Stopped frame capture loop');
+        console.log('Stopped frame capture loop');
       }
     };
   }, [permission?.granted]);
@@ -145,18 +145,18 @@ export default function App() {
       <View style={styles.overlay}>
         <View style={styles.statusBox}>
           <Text style={styles.statusText}>
-            {isProcessing ? '⏳ Processing...' : '✅ Ready'}
+            {isProcessing ? '⏳ Processing...' : 'Ready'}
           </Text>
           {latestResult && (
             <>
               <Text style={styles.resultText}>
-                🎯 Obstacles: {latestResult.total_detections}
+                 Obstacles: {latestResult.total_detections}
               </Text>
               <Text style={styles.resultText}>
-                ⏱️  Latency: {latestResult.latency_ms}ms
+                  Latency: {latestResult.latency_ms}ms
               </Text>
               <Text style={styles.resultText}>
-                📊 Status: {latestResult.status}
+                 Status: {latestResult.status}
               </Text>
               {latestResult.obstacles && latestResult.obstacles.length > 0 && (
                 <Text style={[
@@ -164,7 +164,7 @@ export default function App() {
                   latestResult.obstacles[0].proximity === 'CRITICAL' && styles.critical,
                   latestResult.obstacles[0].proximity === 'NEAR' && styles.near,
                 ]}>
-                  ⚠️  {latestResult.obstacles[0].proximity} - {latestResult.obstacles[0].distance}m {latestResult.obstacles[0].direction}
+                   {latestResult.obstacles[0].proximity} - {latestResult.obstacles[0].distance}m {latestResult.obstacles[0].direction}
                 </Text>
               )}
             </>
