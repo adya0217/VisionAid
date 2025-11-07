@@ -28,7 +28,7 @@ REAL_TIME_MODE = True
 
 
 class ObstacleTracker:
-    """Temporal filtering to smooth detections across frames"""
+   
 
     def __init__(self):
         self.kalman = cv2.KalmanFilter(4, 2)
@@ -49,7 +49,7 @@ class ObstacleTracker:
         return predicted[0, 0], predicted[1, 0]
 
     def get_confidence(self):
-        """Higher confidence with consecutive detections"""
+       
         return min(1.0, self.detected_count / 10)
 
 def image_enhancement_fast(img):
@@ -177,7 +177,7 @@ def save_frame_for_evaluation(frame, obstacles, frame_id, processing_time_ms):
             if 'bbox' in obs:
                 x1, y1, x2, y2 = obs['bbox']
 
-                # Color by proximity
+               
                 if obs['proximity'] == 'CRITICAL':
                     color = (0, 0, 255)      # Red
                 elif obs['proximity'] == 'NEAR':
@@ -192,7 +192,7 @@ def save_frame_for_evaluation(frame, obstacles, frame_id, processing_time_ms):
                 cv2.putText(frame_vis, label, (x1, y1-10),
                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
-        # Save frame with detections
+    
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
         frame_file = f"detection_logs/frames/frame_{frame_id:06d}_{timestamp}.jpg"
         cv2.imwrite(frame_file, frame_vis)
@@ -214,12 +214,12 @@ def save_frame_for_evaluation(frame, obstacles, frame_id, processing_time_ms):
             ]
         }
 
-        # Append to JSONL for batch analysis
+        
         log_file = "detection_logs/realtime_detections.jsonl"
         with open(log_file, 'a') as f:
             f.write(json.dumps(metadata) + '\n')
 
-        # Individual metrics per frame
+        
         metrics_file = f"detection_logs/metrics/frame_{frame_id:06d}_metrics.json"
         with open(metrics_file, 'w') as f:
             json.dump(metadata, f, indent=2)
@@ -227,7 +227,7 @@ def save_frame_for_evaluation(frame, obstacles, frame_id, processing_time_ms):
         return True
 
     except Exception as e:
-        print(f"❌ Frame save error: {e}")
+        print(f" Frame save error: {e}")
         return False
 
 
@@ -256,31 +256,31 @@ def detect_obstacles_endpoint():
         start_time = time.time()
 
         print(f"\n{'='*70}")
-        print(f"📥 Frame #{detector.frame_count + 1}")
+        print(f" Frame #{detector.frame_count + 1}")
         print(f"{'='*70}")
 
-        # Decode image
+        
         data = request.get_json()
         img_b64 = data.get("image")
         img_data = base64.b64decode(img_b64)
         img = Image.open(BytesIO(img_data)).convert("RGB")
         frame = np.array(img)
 
-        print(f"  📐 Image shape: {frame.shape}")
+        print(f"   Image shape: {frame.shape}")
 
-        # Enhancement
-        print(f"  🔧 Enhancing...")
+        
+        print(f"   Enhancing...")
         enhanced = image_enhancement_fast(frame)
 
-        # Detection
-        print(f"  🎯 Detecting obstacles...")
+        
+        print(f"   Detecting obstacles...")
         det_bboxes, edges = detect_obstacles(enhanced)
 
-        # Temporal filtering
+        
         det_bboxes = filter_detections_temporal(det_bboxes, detector.prev_detections)
 
-        # Extract features
-        print(f"  📏 Estimating distances & directions...")
+       
+        print(f"  Estimating distances & directions...")
         obstacles = []
 
         for det in det_bboxes:
@@ -299,14 +299,14 @@ def detect_obstacles_endpoint():
                 'bbox': det['bbox']
             })
 
-        # Sort by distance
+        
         obstacles = sorted(obstacles, key=lambda x: x['distance'])
 
-        # Update state
+        
         detector.prev_detections = det_bboxes
         detector.frame_count += 1
 
-        # Calculate latency
+       
         latency_ms = (time.time() - start_time) * 1000
         detector.metrics['latency_history'].append(latency_ms)
         detector.metrics['total_frames'] += 1
@@ -314,7 +314,7 @@ def detect_obstacles_endpoint():
             detector.metrics['frames_with_obstacles'] += 1
         detector.metrics['avg_latency_ms'] = np.mean(detector.metrics['latency_history'][-100:])
 
-        print(f"  💾 Logging frame & metrics...")
+        print(f"  Logging frame & metrics...")
         save_frame_for_evaluation(frame, obstacles, detector.frame_count, latency_ms)
 
         if obstacles:
@@ -336,14 +336,14 @@ def detect_obstacles_endpoint():
             'audio_message': audio_message  
         }
 
-        print(f"  ✅ Response: {len(obstacles)} obstacles, {latency_ms:.1f}ms")
-        print(f"  🔊 Audio message: {audio_message}")
-        print(f"{'='*70}\n")
+        print(f"  Response: {len(obstacles)} obstacles, {latency_ms:.1f}ms")
+        print(f"  Audio message: {audio_message}")
+        
 
         return jsonify(response)
 
     except Exception as e:
-        print(f"❌ ERROR: {e}")
+        print(f" ERROR: {e}")
         import traceback
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
@@ -378,14 +378,14 @@ def get_status():
 
 if __name__ == "__main__":
     print(f"\n{'='*70}")
-    print(f"🌙 CLEAN Detection Server - NO gTTS")
-    print(f"⚡ Real-time + Evaluation Pipeline")
-    print(f"✅ Backend: Detect + Log")
-    print(f"✅ Frontend: Audio (expo-speech)")
-    print(f"{'='*70}")
-    print(f"\n📱 Real-time Mode: {REAL_TIME_MODE}")
-    print(f"⏱  Latency Budget: {LATENCY_BUDGET_MS}ms")
-    print(f"🌐 Server: http://0.0.0.0:5000")
-    print(f"\n✅ Ready for mobile app\n")
+    print(f"CLEAN Detection Server - NO gTTS")
+    print(f" Real-time + Evaluation Pipeline")
+    print(f"Backend: Detect + Log")
+    print(f"Frontend: Audio (expo-speech)")
+ 
+    print(f"\n Real-time Mode: {REAL_TIME_MODE}")
+    print(f" Latency Budget: {LATENCY_BUDGET_MS}ms")
+    print(f"Server: http://0.0.0.0:5000")
+    print(f"\nReady for mobile app\n")
 
     app.run(host="0.0.0.0", port=5000, debug=False, threaded=True)
